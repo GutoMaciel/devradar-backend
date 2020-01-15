@@ -16,7 +16,7 @@ module.exports = {
 
     let dev = await Dev.findOne({ github_username });
 
-    if (!Dev) {
+    if (!dev) {
           const { name = login, avatar_url, bio } = apiResponse.data;
   
     const techsArray = parseStringAsArray(techs);
